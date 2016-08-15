@@ -1,0 +1,8 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor Hub Adaptor"
+
+source "drivers/misc/meizu/sensor/adaptor/sensorhub/mtk/Kconfig"
+
+endmenu

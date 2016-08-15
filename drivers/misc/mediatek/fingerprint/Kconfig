@@ -1,0 +1,4 @@
+
+source "drivers/misc/mediatek/fingerprint/fpc_ree/Kconfig"
+source "drivers/misc/mediatek/fingerprint/goodix_tee/Kconfig"
+source "drivers/misc/mediatek/fingerprint/goodix_ree/Kconfig"

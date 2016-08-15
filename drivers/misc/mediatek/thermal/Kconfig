@@ -1,0 +1,7 @@
+config MTK_THERMAL_PA_VIA_ATCMD
+	bool "MTK_THERMAL_PA_VIA_ATCMD"
+	help
+	  Internal switch for thermal management to query modem RF
+	  temperature via AT command.
+
+source "drivers/misc/mediatek/thermal/usb_thermal/Kconfig"

@@ -1,0 +1,8 @@
+#
+# Meizu Sensor Framework configuration
+#
+menu "Meizu Sensor"
+
+source "drivers/misc/meizu/sensor/adaptor/Kconfig"
+source "drivers/misc/meizu/sensor/chips/Kconfig"
+endmenu

@@ -1,0 +1,12 @@
+config M95M_USB_THERMAL
+	bool "CONFIG_M95M_USB_THERMAL"
+	default y
+	help
+	  thermal for m95m usb
+
+config USB_COOLING_DEVICE_DEBUG
+	bool "CONFIG_USB_COOLING_DEVICE_DEBUG"
+	depends on M95M_USB_THERMAL
+	default n
+	help
+	   usb cooling device debug.

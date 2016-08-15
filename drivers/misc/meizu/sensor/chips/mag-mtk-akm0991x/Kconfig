@@ -1,0 +1,13 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor Chip - AKM0991x"
+
+config MEIZU_SENSOR_MAG_MTK_AKM0991X
+	tristate "AKM0991x MAG Support"
+	depends on MEIZU_SENSOR
+	select MEIZU_SENSOR_MTK_SCP_MAG_ADAPTOR
+	help
+	  Enable ST LPS25 PRES Support
+
+endmenu

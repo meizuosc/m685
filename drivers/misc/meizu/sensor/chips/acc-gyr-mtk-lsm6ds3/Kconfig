@@ -1,0 +1,13 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor Chip - LSM6DS3"
+
+config MEIZU_SENSOR_ACC_GYR_MTK_LSM6DS3
+	tristate "ST LSM6DS3 ACC GYR Support"
+	depends on MEIZU_SENSOR
+	select MEIZU_SENSOR_MTK_SCP_ACC_ADAPTOR
+	help
+	  Enable ST LPS25 PRES Support
+
+endmenu

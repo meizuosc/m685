@@ -1,0 +1,20 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor MTK SCP ADAPTOR"
+
+config MEIZU_SENSOR_MTK_SCP_ACC_ADAPTOR
+	tristate "Meizu PRES Sensor Adattor Support"
+	help
+	  Enable Meizu PRES Sensor Adattor Support
+
+config MEIZU_SENSOR_MTK_SCP_MAG_ADAPTOR
+	tristate "Meizu PRES Sensor Adattor Support"
+	help
+	  Enable Meizu PRES Sensor Adattor Support
+
+config MEIZU_SENSOR_MTK_SCP_PRES_ADAPTOR
+	tristate "Meizu PRES Sensor Adattor Support"
+	help
+	  Enable Meizu PRES Sensor Adattor Support
+endmenu

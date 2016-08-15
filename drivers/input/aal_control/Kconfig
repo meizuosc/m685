@@ -1,0 +1,8 @@
+#
+# Input misc drivers configuration
+#
+config AAL_CONTROL
+	tristate "AAL Control for AAL DRE feature"
+	default n
+	help
+	  Say Y to enable support AAL control driver.

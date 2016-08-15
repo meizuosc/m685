@@ -1,0 +1,13 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor Chip - PA224"
+
+config MEIZU_SENSOR_PS_PA224
+	tristate "TXC PA224 PS Support"
+	depends on MEIZU_SENSOR
+	select MEIZU_SENSOR_PS_ADAPTOR
+	help
+	  Enable TXC PA224 PS Support
+
+endmenu

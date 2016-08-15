@@ -1,0 +1,2 @@
+
+obj-$(CONFIG_MEIZU_SENSOR_PRES_LPS25)	+= lps25-pres.o

@@ -1,0 +1,1 @@
+obj-$(CONFIG_FINGERPRINT_GOODIX_TEE)	+=  gf/

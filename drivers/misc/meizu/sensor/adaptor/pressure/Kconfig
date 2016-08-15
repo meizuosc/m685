@@ -1,0 +1,11 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor PRES Adaptor"
+
+config MEIZU_SENSOR_PRES_ADAPTOR
+	tristate "Meizu PRES Sensor Adattor Support"
+	help
+	  Enable Meizu PRES Sensor Adattor Support
+
+endmenu

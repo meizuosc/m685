@@ -1,0 +1,23 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor Adaptors"
+
+config MEIZU_SENSOR_ALS_ADAPTOR
+	tristate "Meizu ALS Sensor Adattor Support"
+	help
+	  Enable Meizu ALS Sensor Adattor Support
+
+config MEIZU_SENSOR_PS_ADAPTOR
+	tristate "Meizu PS Sensor Adattor Support"
+	help
+	  Enable Meizu PS Sensor Adattor Support
+
+config MEIZU_SENSOR_PRES_ADAPTOR
+	tristate "Meizu PRES Sensor Adattor Support"
+	help
+	  Enable Meizu PRES Sensor Adattor Support
+
+source "drivers/misc/meizu/sensor/adaptor/sensorhub/Kconfig"
+
+endmenu

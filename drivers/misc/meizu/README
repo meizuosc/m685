@@ -1,0 +1,39 @@
+
+1. Add Kconfig config in "drivers/misc/Kconfig"
+	source "drivers/misc/meizu/Kconfig"
+
+2. Add Makefile config in "drivers/misc/Makefile"
+	obj-$(CONFIG_MEIZU_SENSOR)	+= meizu/
+
+3. Add the following configs in kernel defconfig file
+	CONFIG_IIO=y
+	CONFIG_IIO_BUFFER=y
+	CONFIG_IIO_TRIGGER=y
+	CONFIG_IIO_KFIFO_BUF=y
+	CONFIG_MEIZU_SENSOR=y
+	CONFIG_MEIZU_SENSOR_PA224_PS=y
+	CONFIG_MEIZU_SENSOR_ISL29125_ALS=y
+	CONFIG_MEIZU_SENSOR_LPS25_PRES=y
+
+4. Add sysfs permission config in "system/core/rootdir/ueventd.rc"
+	# sensors
+	/dev/iio:device*                0664   system     system
+
+	/sys/devices/* als_data         0664   system     system
+	/sys/devices/* als_enable       0664   system     system
+
+	/sys/devices/* pres_data        0664   system     system
+	/sys/devices/* pres_enable      0664   system     system
+
+	/sys/devices/* ps_data          0664   system     system
+	/sys/devices/* ps_enable        0664   system     system
+	/sys/devices/* ps_calibbias     0444   system     system
+	/sys/devices/* ps_calibration   0664   system     system
+	/sys/devices/* ps_irq_gpio      0444   system     system
+	/sys/devices/* ps_offset        0664   system     system
+	/sys/devices/* ps_threshold     0664   system     system
+	/sys/devices/* ps_wakeup_enable 0664   system     system
+
+	/sys/devices/pa224-ps/iio:device*     sampling_frequency 0664   system     system
+	/sys/devices/isl29125-als/iio:device* sampling_frequency 0664   system     system
+	/sys/devices/lps25hb-pres/iio:device* sampling_frequency 0664   system     system

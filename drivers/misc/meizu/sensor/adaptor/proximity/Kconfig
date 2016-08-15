@@ -1,0 +1,11 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor PS Adaptor"
+
+config MEIZU_SENSOR_PS_ADAPTOR
+	tristate "Meizu PS Sensor Adattor Support"
+	help
+	  Enable Meizu PS Sensor Adattor Support
+
+endmenu

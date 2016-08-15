@@ -1,0 +1,5 @@
+config SND_SOC_TFA98XX
+	tristate "SoC Audio for nxp tfa98xx series"
+	depends on I2C
+	help
+	  This option enables support for tfa98xx series Smart PA.

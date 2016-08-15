@@ -1,0 +1,13 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor Chip - ISL29125"
+
+config MEIZU_SENSOR_ALS_ISL29125
+	tristate "Intersil ISL29125 ALS Support"
+	depends on MEIZU_SENSOR
+	select MEIZU_SENSOR_ALS_ADAPTOR
+	help
+	  Enable Intersil ISL29125 ALS support
+
+endmenu

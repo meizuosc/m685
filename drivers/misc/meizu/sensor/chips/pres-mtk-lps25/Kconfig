@@ -1,0 +1,13 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor Chip - LPS25"
+
+config MEIZU_SENSOR_PRES_MTK_LPS25
+	tristate "ST LPS25 MAG Support"
+	depends on MEIZU_SENSOR
+	select MEIZU_SENSOR_MTK_SCP_PRES_ADAPTOR
+	help
+	  Enable ST LPS25 PRES Support
+
+endmenu

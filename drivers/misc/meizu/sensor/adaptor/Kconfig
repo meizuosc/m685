@@ -1,0 +1,12 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor Adaptors"
+
+source "drivers/misc/meizu/sensor/adaptor/light/Kconfig"
+source "drivers/misc/meizu/sensor/adaptor/pressure/Kconfig"
+source "drivers/misc/meizu/sensor/adaptor/proximity/Kconfig"
+source "drivers/misc/meizu/sensor/adaptor/sensorhub/Kconfig"
+source "drivers/misc/meizu/sensor/adaptor/temperature/Kconfig"
+
+endmenu

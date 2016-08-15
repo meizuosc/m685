@@ -1,0 +1,17 @@
+#
+# Tablet driver configuration
+#
+
+config FINGERPRINT_FPC1150
+	tristate "FPC1150 fingerprint"
+	depends on SPI_MASTER
+	help
+	  Say Y here if you have a fingerprint interface using the
+	  FPC1150 controller, and your board-specific initialization
+	  code includes that in its table of SPI devices.
+
+	  If unsure, say N (but it's safe to say "Y").
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called FPC1150.
+

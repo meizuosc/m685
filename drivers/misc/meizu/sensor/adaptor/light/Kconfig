@@ -1,0 +1,11 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor ALS Adaptor"
+
+config MEIZU_SENSOR_ALS_ADAPTOR
+	tristate "Meizu ALS Sensor Adattor Support"
+	help
+	  Enable Meizu ALS Sensor Adattor Support
+
+endmenu

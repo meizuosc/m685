@@ -1,0 +1,13 @@
+#
+# Meizu Sensor Chips configuration
+#
+menu "Meizu Sensor Chips"
+
+source "drivers/misc/meizu/sensor/chips/acc-gyr-mtk-lsm6ds3/Kconfig"
+source "drivers/misc/meizu/sensor/chips/als-isl29125/Kconfig"
+source "drivers/misc/meizu/sensor/chips/mag-mtk-akm0991x/Kconfig"
+source "drivers/misc/meizu/sensor/chips/pres-lps25/Kconfig"
+source "drivers/misc/meizu/sensor/chips/pres-mtk-lps25/Kconfig"
+source "drivers/misc/meizu/sensor/chips/ps-pa224/Kconfig"
+
+endmenu

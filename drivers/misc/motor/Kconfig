@@ -1,0 +1,13 @@
+#
+# motor devices
+#
+
+menu "Motor Ti drv2605 drivers"
+	depends on ANDROID_TIMED_OUTPUT
+
+config MOTOR_DRV2605
+	bool "drv2605 motor driver"
+	depends on ANDROID_TIMED_OUTPUT
+	default n
+
+endmenu

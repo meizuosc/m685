@@ -1,0 +1,8 @@
+# Boost Regulator driver
+
+# Mediatek Boost Regulator driver
+config MTK_BOOST_REGULATOR
+	tristate "MediaTek Boost Regulator Driver"
+	default n
+	---help---
+	  Mediatek Boost Regulator Driver

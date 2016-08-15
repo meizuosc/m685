@@ -1,0 +1,5 @@
+config FINGERPRINT_GOODIX_TEE
+  bool FINGERPRINT_GOODIX_TEE
+  default y
+  help
+    Goodix Fingerprint chip GF516/GF318GF316M/GF516M/GF616M/GF318M TEE driver

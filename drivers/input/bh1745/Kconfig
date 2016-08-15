@@ -1,0 +1,19 @@
+#
+# Input misc drivers configuration
+#
+menuconfig M95M_SENSOR
+	bool "MEIZU_ALS_PS_SENSOR bh sensor"
+	help
+	  Say Y here, and a list of miscellaneous input drivers will be displayed.
+	  Everything that didn't fit into the other categories is here. This option
+	  doesn't affect the kernel.
+
+if M95M_SENSOR
+config INPUT_ALSPS_BH1745
+	tristate "BH ALSPS BH1745"
+	depends on INPUT && I2C
+	default y
+	help
+	  Say Y to enable support for the AWAGO ALSPS APDS9922 driver.
+endif
+
